@@ -919,6 +919,29 @@ a {
     background-color: rgba(240, 248, 255, 0.267);
 }
 
+@media screen and (max-width: 900px) {
+
+    .centrar {
+        font-size: 16px;
+        text-align: center;
+        width: 360px;
+        vertical-align: middle;
+        margin: 0 auto;
+        padding-bottom: 40px;
+    }
+    
+
+    .mapa {
+        padding: 20px 0 20px 0;
+        width: 350px;
+        border-radius: 2%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(240, 248, 255, 0.267);
+    }
+}
+
 /* Contacto */
 
 

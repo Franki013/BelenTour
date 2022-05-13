@@ -1,181 +1,97 @@
-var widthWindow = window.innerWidth
+const widthWindow = window.innerWidth
 
-
-const desktopAnimations = ()=>{
-    window.sr = ScrollReveal();
-
-    sr.reveal('.navegacion', {
-        duration: 1000,
-        easing: 'ease-in'
-    });
-
-    sr.reveal('.banner', {
-        duration: 1000,
-        easing: 'ease-in-out'
-    });
-
-    
-    sr.reveal('.scroll-animacion', {
-        duration: 3000,
-        origin: 'right',
-        distance: '-400px',
-    });
-
-
-    sr.reveal('.scroll-mision', {
-        duration: 3000,
-        origin: 'left',
-        distance: '-400px'
-    });
-
-
-    sr.reveal('.scroll-img-l', {
-        duration: 3000,
-        origin: 'left',
-        distance: '-400px'
-    });
-
-    sr.reveal('.scroll-img-r', {
-        duration: 3000,
-        origin: 'right',
-        distance: '-400px'
-    });
-
-    sr.reveal('.scroll-senderismo', {
-        duration: 3000,
-        origin: 'right',
-        distance: '-400px'
-    });
-
-    sr.reveal('.scroll-escalada', {
-        duration: 3000,
-        origin: 'left',
-        distance: '-400px'
-    })
-
-    sr.reveal('.scroll-camping', {
-        duration: 3000,
-        origin: 'right',
-        distance: '-400px'
-    });
-
-    sr.reveal('.scroll-tirolesa', {
-        duration: 3000,
-        origin: 'left',
-        distance: '-400px'
-    })
-
-    sr.reveal('.ubicacion',{
-        duration: 1000,
-        easing: 'ease-in-out'
-    })
-
-    sr.reveal('.ubicacion',{
-        duration: 1000,
-        easing: 'ease-in-out',
-        delay: 400
-    })
-
-    sr.reveal('.contenedor-contacto',{
-        duration: 1000,
-        easing: 'ease-in-out',
-        delay: 400
-    })
-}
-
-const animationsMobile = ()=>{
-    window.sr = ScrollReveal();
-
-    sr.reveal('.navegacion', {
-        duration: 1000,
-        easing: 'ease-in'
-    });
-
-    sr.reveal('.banner', {
-        duration: 1000,
-        easing: 'ease-in-out'
-    });
-
-    
-    sr.reveal('.scroll-animacion', {
-        duration: 1000,
-        easing: 'ease-in-out',
-        delay: 400
-    });
-
-
-    sr.reveal('.scroll-mision', {
-        duration: 1000,
-        easing: 'ease-in-out',
-        delay: 400
-    });
-
-
-    sr.reveal('.scroll-img-l', {
-        duration: 1000,
-        easing: 'ease-in-out',
-        delay: 400
-    });
-
-    sr.reveal('.scroll-img-r', {
-        duration: 1000,
-        easing: 'ease-in-out',
-        delay: 400
-    });
-
-    sr.reveal('.scroll-senderismo', {
-        duration: 1000,
-        easing: 'ease-in-out',
-        delay: 400
-    });
-
-    sr.reveal('.scroll-escalada', {
-        duration: 1000,
-        easing: 'ease-in-out',
-        delay: 400
-    })
-
-    sr.reveal('.scroll-camping', {
-        duration: 1000,
-        easing: 'ease-in-out',
-        delay: 400
-    });
-
-    sr.reveal('.scroll-tirolesa', {
-        duration: 1000,
-        easing: 'ease-in-out',
-        delay: 400
-    })
-
-    sr.reveal('.ubicacion',{
-        duration: 1000,
-        easing: 'ease-in-out'
-    })
-
-    sr.reveal('.ubicacion',{
-        duration: 1000,
-        easing: 'ease-in-out',
-        delay: 400
-    })
-
-    sr.reveal('.contenedor-contacto',{
-        duration: 1000,
-        easing: 'ease-in-out',
-        delay: 400
-    })
-
-
-}
-
-
-function animations(){
-
+const removeDecoration = ()=>{
     if(widthWindow < 768){
-        animationsMobile();
-
-    } else{
-        desktopAnimations();
+        document.querySelector('.titulo-secundario').classList.remove('titulo-decorado');
     }
+    else{
+        document.querySelector('.titulo-secundario').classList.add('titulo-decorado');
+    }
+}
+
+removeDecoration();
+
+
+const animations= ()=>{
+    window.sr = ScrollReveal();
+
+    sr.reveal('.navegacion', {
+        duration: 1000,
+        easing: 'ease-in'
+    });
+
+    sr.reveal('.banner', {
+        duration: 1000,
+        easing: 'ease-in-out'
+    });
+
+    
+    sr.reveal('.scroll-animacion', {
+        duration: 1000,
+        easing: 'ease-in-out',
+        delay: 400
+    });
+
+
+    sr.reveal('.scroll-mision', {
+        duration: 1000,
+        easing: 'ease-in-out',
+        delay: 400
+    });
+
+
+    sr.reveal('.scroll-img-l', {
+        duration: 1000,
+        easing: 'ease-in-out',
+        delay: 400
+    });
+
+    sr.reveal('.scroll-img-r', {
+        duration: 1000,
+        easing: 'ease-in-out',
+        delay: 400
+    });
+
+    sr.reveal('.scroll-senderismo', {
+        duration: 1000,
+        easing: 'ease-in-out',
+        delay: 400
+    });
+
+    sr.reveal('.scroll-escalada', {
+        duration: 1000,
+        easing: 'ease-in-out',
+        delay: 400
+    })
+
+    sr.reveal('.scroll-camping', {
+        duration: 1000,
+        easing: 'ease-in-out',
+        delay: 400
+    });
+
+    sr.reveal('.scroll-tirolesa', {
+        duration: 1000,
+        easing: 'ease-in-out',
+        delay: 400
+    })
+
+    sr.reveal('.ubicacion',{
+        duration: 1000,
+        easing: 'ease-in-out'
+    })
+
+    sr.reveal('.ubicacion',{
+        duration: 1000,
+        easing: 'ease-in-out',
+        delay: 400
+    })
+
+    sr.reveal('.contenedor-contacto',{
+        duration: 1000,
+        easing: 'ease-in-out',
+        delay: 400
+    })
 }
 
 animations();
