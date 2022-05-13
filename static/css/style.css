@@ -46,27 +46,31 @@ h2 {
     user-select: none;
 }
 
-.titulo-decorado {
-    left: 50%;
-    transform: translateX(-50%);
-}
 
-.titulo-decorado::before {
-    left: -140px;
-}
-
-.titulo-decorado::after {
-    right: -140px;
-}
-
-.titulo-decorado::after,
-.titulo-decorado::before {
-    content: '';
-    position: absolute;
-    width: 120px;
-    height: 3px;
-    background-color: aliceblue;
-    top: 0.6em;
+@media screen and (min-width: 900px) {
+    .titulo-decorado {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .titulo-decorado::before {
+        left: -140px;
+    }
+    
+    .titulo-decorado::after {
+        right: -140px;
+    }
+    
+    .titulo-decorado::after,
+    .titulo-decorado::before {
+        content: '';
+        position: absolute;
+        width: 120px;
+        height: 3px;
+        background-color: aliceblue;
+        top: 0.6em;
+    }
+    
 }
 
 .padding-20 {
@@ -137,6 +141,7 @@ h3 {
     }
 
     /* NAV MENU ITEMS */
+
     .navegacion ul {
         height: 100vh;
         list-style: none;
@@ -249,7 +254,7 @@ h3 {
     .hamburger-menu {
         position: fixed;
         top: 1rem;
-        right: 2rem;
+        right: 4rem;
         z-index: 10;
         cursor: pointer;
     }
@@ -582,7 +587,7 @@ a {
     margin-top: 250px;
 }
 
-/* media query contacto */
+
 
 @media screen and (min-width: 768px) {
     .nosotros::after {
@@ -887,39 +892,39 @@ a {
 }
 
 
-.titulo-contacto {
-    font-size: 60px;
-    font-family: 'Dancing Script', cursive;
-    display: inline-block;
-    position: relative;
+@media screen and (min-width: 800px) {
+    .ubicacion {
+        padding-top: 20px;
+        height: 860px;
+    }
+    
+    
+    .centrar {
+        font-size: 16px;
+        text-align: center;
+        width: 600px;
+        vertical-align: middle;
+        margin: 0 auto;
+        padding-bottom: 40px;
+    }
+    
+    .mapa {
+        padding: 20px 0 20px 0;
+        width: 640px;
+        border-radius: 2%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(240, 248, 255, 0.267);
+    }
+
+    .mapa iframe{
+        width: 620px;
+        height: 480px;
+    }
 }
 
-.ubicacion {
-    padding-top: 20px;
-    height: 860px;
-}
-
-
-.centrar {
-    font-size: 16px;
-    text-align: center;
-    width: 600px;
-    vertical-align: middle;
-    margin: 0 auto;
-    padding-bottom: 40px;
-}
-
-.mapa {
-    padding: 20px 0 20px 0;
-    width: 640px;
-    border-radius: 2%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(240, 248, 255, 0.267);
-}
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
 
     .centrar {
         font-size: 16px;
@@ -944,6 +949,13 @@ a {
 
 /* Contacto */
 
+
+.titulo-contacto {
+    font-size: 60px;
+    font-family: 'Dancing Script', cursive;
+    display: inline-block;
+    position: relative;
+}
 
 .button:hover {
     background-color: rgba(99, 138, 108, 0.418)
@@ -1047,7 +1059,7 @@ a {
     .contacto {
         background-color: rgba(240, 248, 255, 0.151);
         padding: 20px 0 20px 0;
-        width: 450px;
+        width: 350px;
         margin: 0 auto;
         position: relative;
         border-radius: 2%;
@@ -1058,7 +1070,7 @@ a {
         align-items: center;
         margin: 0 auto;
         justify-content: space-between;
-        width: 800px;
+        width: 400px;
     }
 
     input {

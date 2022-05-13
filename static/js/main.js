@@ -1,15 +1,5 @@
 const widthWindow = window.innerWidth
 
-const removeDecoration = ()=>{
-    if(widthWindow < 768){
-        document.querySelector('.titulo-secundario').classList.remove('titulo-decorado');
-    }
-    else{
-        document.querySelector('.titulo-secundario').classList.add('titulo-decorado');
-    }
-}
-
-removeDecoration();
 
 
 const animations= ()=>{
@@ -87,11 +77,6 @@ const animations= ()=>{
         delay: 400
     })
 
-    sr.reveal('.contenedor-contacto',{
-        duration: 1000,
-        easing: 'ease-in-out',
-        delay: 400
-    })
 }
 
 animations();
